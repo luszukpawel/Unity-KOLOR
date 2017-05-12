@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 1 - 2D Platformer", "Project 1 - 2D Platformer.csproj", "{499A3677-C385-E8DB-30A9-D0DE49C5272E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{499A3677-C385-E8DB-30A9-D0DE49C5272E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499A3677-C385-E8DB-30A9-D0DE49C5272E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499A3677-C385-E8DB-30A9-D0DE49C5272E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499A3677-C385-E8DB-30A9-D0DE49C5272E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
