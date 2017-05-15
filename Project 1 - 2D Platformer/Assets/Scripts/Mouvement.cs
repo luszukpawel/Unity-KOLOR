@@ -20,6 +20,7 @@ public class Mouvement : MonoBehaviour
     // metoda Update() wykonuje się co klatkę
     void Update()
     {
+        //Debug.Log("Rigidbody y" + rb.velocity.y);
         x = Input.GetAxis("Horizontal");
         rb.AddForce(Speed * x, 0, 0);
 
