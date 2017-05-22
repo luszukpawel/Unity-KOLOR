@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
-  //  public Text EnemyHitText;
+    //  public Text EnemyHitText;
     public Text EnemyHitText;
     public int EnemyHitCounter;
     public GameObject MuzzleFlash;
@@ -15,13 +15,13 @@ public class Gun : MonoBehaviour
     {
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, transform.right, out hit))
+        if (Input.GetMouseButton(0))
         {
-            if (Input.GetMouseButton(0))
+            StartCoroutine(MuzzleFlashEnumerator());
+            if (Physics.Raycast(transform.position, transform.right, out hit))
             {
-                StartCoroutine(MuzzleFlashEnumerator());
-               // Debug.Log("piew piew");
-                if(hit.transform.gameObject.tag == "Enemy")
+                // Debug.Log("piew piew");
+                if (hit.transform.gameObject.tag == "Enemy")
                 {
                     EnemyHitCounter++;
                     EnemyHitText.text = "ENEMIES HITS : " + EnemyHitCounter;
