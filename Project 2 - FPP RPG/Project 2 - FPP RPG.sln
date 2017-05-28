@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 2 - FPP RPG.Plugins", "Project 2 - FPP RPG.Plugins.csproj", "{681D31F8-0AE2-D648-9251-E3ED9C4FF56A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 2 - FPP RPG", "Project 2 - FPP RPG.csproj", "{D0977B77-DAAC-35EA-9BAB-1A0710715F6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project 2 - FPP RPG.Editor.Plugins", "Project 2 - FPP RPG.Editor.Plugins.csproj", "{72356351-2885-5322-06DC-5A7D608F3314}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{681D31F8-0AE2-D648-9251-E3ED9C4FF56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681D31F8-0AE2-D648-9251-E3ED9C4FF56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681D31F8-0AE2-D648-9251-E3ED9C4FF56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681D31F8-0AE2-D648-9251-E3ED9C4FF56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0977B77-DAAC-35EA-9BAB-1A0710715F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0977B77-DAAC-35EA-9BAB-1A0710715F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0977B77-DAAC-35EA-9BAB-1A0710715F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0977B77-DAAC-35EA-9BAB-1A0710715F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72356351-2885-5322-06DC-5A7D608F3314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72356351-2885-5322-06DC-5A7D608F3314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72356351-2885-5322-06DC-5A7D608F3314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72356351-2885-5322-06DC-5A7D608F3314}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
