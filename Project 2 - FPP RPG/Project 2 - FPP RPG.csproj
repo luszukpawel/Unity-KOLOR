@@ -87,6 +87,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\Sword.cs" />
   </ItemGroup>
   <ItemGroup>
