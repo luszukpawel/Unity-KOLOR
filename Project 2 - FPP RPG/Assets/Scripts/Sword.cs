@@ -7,8 +7,8 @@ public class Sword : MonoBehaviour
     [SerializeField]
     private AnimationClip BasicAttack;
 
-    [SerializeField]
-    private AnimationClip Idle;
+ 
+    public AnimationClip Idle;
 
     private Animation anim;
 

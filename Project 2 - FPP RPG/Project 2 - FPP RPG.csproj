@@ -87,8 +87,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\EnemyBehaviour.cs" />
+    <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
+    <Compile Include="Assets\Scripts\PlayerMelee.cs" />
     <Compile Include="Assets\Scripts\Sword.cs" />
+    <Compile Include="Assets\Scripts\UnitHealth.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Models\laxer tree pkg\README.txt" />
