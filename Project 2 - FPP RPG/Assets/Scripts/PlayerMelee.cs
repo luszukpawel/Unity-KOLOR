@@ -16,7 +16,7 @@ public class PlayerMelee : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit))
             {
-                Debug.Log(hit.transform.gameObject.name);
+              //  Debug.Log(hit.transform.gameObject.name);
                 if (hit.transform.gameObject.tag == "Enemy" && hit.distance <= SwordRange)
                 {
                     Debug.Log("Hit");
