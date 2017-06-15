@@ -7,17 +7,14 @@ public class CameraController : MonoBehaviour {
     Transform target;
 
     // Use this for initialization
+    private GameObject PlayerTransform;
     void Start()
     {
-        if (target == null)
-        {
-            target = GameObject.FindGameObjectWithTag("Player").transform;
-        }
+        PlayerTransform = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.position.x, transform.position.y, target.position.z - 6f), 5f * Time.deltaTime);
+        transform.position = PlayerTransform.transform.position;
     }
 }

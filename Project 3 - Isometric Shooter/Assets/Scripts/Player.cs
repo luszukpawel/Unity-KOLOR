@@ -9,7 +9,10 @@ public class Player : MonoBehaviour
 
     public GameObject bullet;
     public GameObject Gun;
-    public float speed = 40;
+    public float Bulletspeed = 40;
+
+    public AudioClip ShootSound;
+    private AudioSource audio;
 
     Camera viewCamera;
     PlayerController controller;
@@ -18,6 +21,7 @@ public class Player : MonoBehaviour
     public void Start()
     {
         viewCamera = Camera.main;
+        audio = GetComponent<AudioSource>();
         controller = GetComponent<PlayerController>();
 
     }
@@ -42,13 +46,19 @@ public class Player : MonoBehaviour
             controller.LookAt(point);
         }
 
-        //Weapon Input
         if (Input.GetMouseButtonDown(0))
         {
-            Rigidbody instantiatedShoot = Instantiate(bullet, new Vector3(Gun.transform.position.x, Gun.transform.position.y, Gun.transform.position.z + 0.01f), transform.rotation).GetComponent<Rigidbody>();
-            //transform.Rotate(new Vector3(90f, 0f, 0f));
-            instantiatedShoot.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
-        }
+            audio.clip = ShootSound;
+            audio.Play();
 
+           // audio.PlayOneShot(ShootSound);
+            Rigidbody intantiatiateShoot = Instantiate(bullet,
+                    new Vector3(Gun.transform.position.x, Gun.transform.position.y, Gun.transform.position.z + 0.1f),
+                    transform.rotation)
+                .GetComponent<Rigidbody>();
+
+            intantiatiateShoot.velocity = transform.TransformDirection(new Vector3(0, 0, Bulletspeed));
+        }
+        
     }
 }
